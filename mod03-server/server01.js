@@ -3,9 +3,9 @@ const fs = require('fs')
 const path = require('path')
 const porta = process.env.PORT || 3000
 
-const home = path.join(__dirname, 'index.html')
-const sobre = path.join(__dirname, 'sobre.html')
-const notFound = path.join(__dirname, '404.html')
+const home = path.join(__dirname, 'pages/index.html')
+const sobre = path.join(__dirname, 'pages/sobre.html')
+const notFound = path.join(__dirname, 'pages/404.html')
 
 const server = http.createServer((req, res) => {
     const novaUrl = new URL(req.url, `http://${req.headers.host}`)
