@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o nosso mundo | Teste</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: #111827;
+            background: #eef6ff;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: radial-gradient(circle at top right, #d90808, #e246dbfe 35%);
+        }
+
+        .card {
+            width: 100%;
+            max-width: 720px;
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(240, 21, 94, 0.985);
+            box-shadow: 0 24px 70px rgba(13, 5, 1, 0.12);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: clamp(2rem, 3vw, 2.5rem);
+            color: #1e3a8a;
+        }
+
+        p {
+            line-height: 1.75;
+            margin: 1rem 0;
+            color: #334155;
+        }
+
+        .actions {
+            margin-top: 1.75rem;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 0.9rem 1.4rem;
+            border-radius: 999px;
+            text-decoration: none;
+            color: #ffffff;
+            background: #2563eb;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        a.button:hover,
+        a.button:focus-visible {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Sobre o Free fire</h1>
+        <p>No Free Fire, criamos um ambiente focado em desempenho e diversão justa. Unimos servidores otimizados e suporte humanizado para garantir partidas sem travamentos, combates equilibrados e uma comunidade segura para todos os jogadores evoluírem suas patentes.</p>
+        <p>Valorizamos transparência, qualidade e compromisso com resultados. Aqui, cada detalhe é pensado para trazer confiança e crescimento aos nossos jogadores.</p>
+        <div class="actions">
+            <a class="button" href="/">Voltar para a página inicial</a>
+        </div>
+    </main>
+</body>
+</html>
